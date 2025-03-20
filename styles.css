@@ -1,0 +1,58 @@
+/* Reiniciar estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('assets/leveling2.png') no-repeat center center/cover;
+    color: #ffffff;
+    text-align: center;
+    backdrop-filter: blur(5px); /* Efecto de desenfoque */
+}
+
+/* Contenedor principal */
+.container {
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 153, 255, 0.7);
+    max-width: 500px;
+    width: 90%;
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #00aaff;
+    text-shadow: 0 0 10px #00aaff, 0 0 20px #0088cc;
+}
+
+/* Contador */
+#countdown {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #00aaff;
+    margin-top: 20px;
+}
+
+/* Animación de brillo */
+@keyframes glow {
+    0% { text-shadow: 0 0 10px #00aaff; }
+    50% { text-shadow: 0 0 20px #00ffff; }
+    100% { text-shadow: 0 0 10px #00aaff; }
+}
+
+#countdown {
+    animation: glow 2s infinite alternate;
+}
+
